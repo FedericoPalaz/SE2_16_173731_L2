@@ -5,21 +5,9 @@
       <meta charset="utf-8">
       <title> HTML5 basics </title>
    </head>
-   <body>
+   <body >
         <h1>Welcome to the warehouse Manager</h1>
-        <script type="text/javascript">
-            document.write('<table>');	
-            for (i=1; i<=3; i++) {	
-            document.write('<tr>') 	
-            for (j=1; j<=4; j++) {	
-            document.write('<td>');	
-            document.write('a<sub><small>' + i + ',' + j + '</small></sub>');	
-            document.write('</td>');	
-            }	
-            document.write('</tr>');	
-            }	
-            document.write('</table>');	
-            document.close();	
-        </script>
+        <script src="script.js"></script>
+		<p onload="crea_tabella()"></p>
    </body>
 </html>

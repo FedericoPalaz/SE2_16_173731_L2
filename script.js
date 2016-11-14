@@ -1,7 +1,23 @@
+//controllo del limite
+function check()
+{
+	var vettore = document.getElementById("tabella_riga2").getElementsByTagName("td");
+	var sum=0,limite;
+	if(document.getElementById("limite").value=="")
+		limite=0;
+	else
+		limite=parseInt(document.getElementById("limite").value);
+
+	for(var i=0;i<vettore.length;i++)
+		sum=sum+parseInt(vettore[i].innerHTML);
+	if(limite<sum)
+		window.alert("Il magazzino è pieno!");
+}
 
 //Rende visibile i due campi per inserire i dati
 function Aggiungi()
 {
+	check();
 	document.getElementById("text_1").style.visibility="visible";	
 	document.getElementById("text_2").style.visibility="visible";
 	document.getElementById("name_col").style.visibility="visible";
@@ -11,6 +27,7 @@ function Aggiungi()
 //invia i dati e li fa vedere in tabella
 function Invia()
 {
+	check();
 	if(document.getElementById("name_col").value!="" && document.getElementById("val_col").value!=""){
 		
 		var count=trovato(document.getElementById("name_col").value);
@@ -48,6 +65,7 @@ function Invia()
 //Ordina la tabella in base al numero di item
 function Ordina()
 {
+	check();
 	var vettore_intest=document.getElementById("tabella_riga1").getElementsByTagName("td");
 	var vettore = document.getElementById("tabella_riga2").getElementsByTagName("td");
 	var minimo;

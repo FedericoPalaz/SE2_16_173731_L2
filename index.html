@@ -4,22 +4,30 @@
       <!-- Here goes the metadata -->  
       <meta charset="utf-8">
       <title> HTML5 basics </title>
+      <script type="text/javascript" src="script.js"></script>
    </head>
-   <body>
+   <body >
         <h1>Welcome to the warehouse Manager</h1>
-        <script type="text/javascript">
-            document.write('<table>');	
-            for (i=1; i<=3; i++) {	
-            document.write('<tr>') 	
-            for (j=1; j<=4; j++) {	
-            document.write('<td>');	
-            document.write('a<sub><small>' + i + ',' + j + '</small></sub>');	
-            document.write('</td>');	
-            }	
-            document.write('</tr>');	
-            }	
-            document.write('</table>');	
-            document.close();	
-        </script>
+	<table id="tabella" border="1px">
+		<tr id="tabella_riga1">
+			<td>Banane</td>
+			<td>Pesche</td>
+		</tr>
+		
+		<tr id="tabella_riga2">			
+			<td>10</td>
+			<td>3</td>
+		</tr>
+	</table>
+	Limite del magazzino (in numero):<input value="30" id="limite"/>
+	<br/>
+        <button onclick="Aggiungi()">Aggiungi</button>
+	<button onClick="Ordina()">Ordina</button>
+	<br/>
+	<p id="text_1" style="visibility:hidden">Inserisci nome: <p><input type="text" id="name_col" style="visibility:hidden"/>
+	<br/>	
+	<p id="text_2" style="visibility:hidden">Inserisci valore:</p><input type="text" id="val_col" style="visibility:hidden"/>
+	<br/>	
+	<button onclick="Invia()" id="Invia" style="visibility:hidden">Invia</button>
    </body>
 </html>

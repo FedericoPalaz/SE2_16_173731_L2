@@ -1,0 +1,19 @@
+{
+  "name": "se2_16_173731_l2",
+  "version": "1.0.0",
+  "description": "Esercizio tabella javascript",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FedericoPalaz/SE2_16_173731_L2.git"
+  },
+  "author": "Federico Palazzini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FedericoPalaz/SE2_16_173731_L2/issues"
+  },
+  "homepage": "https://github.com/FedericoPalaz/SE2_16_173731_L2#readme"
+}
